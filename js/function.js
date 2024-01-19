@@ -12,34 +12,16 @@ let oldIdx = nowIdx; // 직전
 
 
 
-function goToSlide(index) {
-    oldIdx = nowIdx;
-    nowIdx = index;
-
-    // 활성화 표시
-    $indicators[nowIdx - 1].parentElement.classList.add("on");
-    $indicators[oldIdx - 1].parentElement.classList.remove("on");
-
-    // 컨테이너 이동
-    $containers.style.left = -(nowIdx * 100) + "%";
-}
-
-
-
 const arrTopVal = []; //메인 슬라이드
 console.log('arrTopVal =', arrTopVal);
-$mainSlide.forEach(($article,idx)=>{
+$mainSlide.forEach(($mainSlide,idx)=>{
 	//어떤 요소의 top 값(body로부터 떨어진 거리)을 구하는 $DOM.offsetTop 속성
-	arrTopVal[idx] = $article.offsetTop; 
+	arrTopVal[idx] = $mainSlide.offsetTop; 
 });
 
 //위로버튼
 $moveSlideTop.addEventListener("click", function (evt) {
     evt.preventDefault();
-
-    if(arrTopVal == 0){
-
-    }
     
 });
 
