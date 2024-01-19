@@ -17,6 +17,7 @@ body{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.3);
 }
+
 #nav>.topbox{
     display: flex;
     justify-content: center;
@@ -68,7 +69,11 @@ body{
 }
 
 #main{
+    position: absolute;
+    left: 50%;
     height: 400%;
+    top: 0%;
+    transition: all 0.4s;
 }
 #main1{
     position: relative;
@@ -114,7 +119,7 @@ body{
 #main2>h1{
     position: absolute;
     top: 110px;
-    left: 80px;
+    left: -300px;
     width: 400px;
     text-indent: 20px;
     border-left: 4px solid white;
@@ -136,12 +141,12 @@ body{
     display: flex;
     width: 800px;
     height: 200px;
-    transition: transform 0.8s ease-in-out;
 }
 
 .cos div {
     flex: 0 0 100%;
     box-sizing: border-box;
+    transition: all 0.4s ease-in-out;
 }
 #main2>#course>.cos>.cos1{
     width: 100%;
@@ -239,15 +244,12 @@ body{
 #main3{
     position: relative;
     height: 25%;
-
-
-
 }
 #main3>h1{
     position: absolute;
     top: 110px;
-    left: 80px;
-    width: 400px;
+    left: -300px;
+    width: 250px;
     text-indent: 20px;
     border-left: 4px solid white;
 }
@@ -262,7 +264,7 @@ body{
 #main4>h1{
     position: absolute;
     top: 110px;
-    left: 80px;
+    left: -300px;
     width: 400px;
     text-indent: 20px;
     border-left: 4px solid white;
